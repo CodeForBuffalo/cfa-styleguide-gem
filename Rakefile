@@ -16,6 +16,11 @@ namespace :lint do
     RuboCop::RakeTask.new
     Rake::Task["rubocop:auto_correct"].execute
   end
+
+  task :css_lint do
+    require "ruby_css_lint/Rakefile"
+
+  end
 end
 
 task default: %w(lint:autocorrect spec)
