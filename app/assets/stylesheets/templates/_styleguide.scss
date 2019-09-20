@@ -40,8 +40,8 @@
   }
 
   .pattern__button {
-    font-size: $font-size-smallest;
-    line-height: $line-height-normal;
+    font-size: $font-size-15;
+    line-height: $s25;
     color: $color-grey-darkest;
     font-weight: 600;
     text-decoration: none;
@@ -68,7 +68,7 @@
       }
       pre {
         display: block;
-        font-size: $font-size-smallest;
+        font-size: $font-size-15;
         border: 1px solid $color-grey-light;
         background: #fff;
       }
@@ -89,7 +89,7 @@
   }
 
   .pattern__code {
-    font-size: $font-size-smallest;
+    font-size: $font-size-15;
   }
 
   .example-container {
@@ -104,7 +104,7 @@
 
   .box {
     background-color: $color-grey-light;
-    border: 1px solid $color-darkest-grey;
+    border: 1px solid $color-grey-darkest;
     padding: 15px;
   }
 
@@ -112,7 +112,7 @@
     display: inline-block;
     margin-right: 1em;
     margin-bottom: 1em;
-    font-size: $font-size-small;
+    font-size: $font-size-25-small;
     color: $color-grey-dark;
     text-align: center;
 
@@ -229,7 +229,7 @@
 
     &--tan {
       &:before {
-        background-color: $color-tan;
+        background-color: $color-grey;
       }
     }
 
