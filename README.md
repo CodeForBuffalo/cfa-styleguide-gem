@@ -72,9 +72,26 @@ After checking out the repo, run `bin/setup` to install dependencies. You must i
 
 Run `bin/rails s` to start a webserver with a test app that has the engine mounted, then visit `http://localhost:3000`.
 
+### Overriding this gem locally in another project
+
 If the gem is being used in another project's Gemfile, the source can be locally overridden within the other project's Gemfile by running `bundle config local.cfa-styleguide /path/to/cfa-styleguide-gem`, and undone with `bundle config --delete local.cfa-styleguide`
 
 To install this gem onto your local machine, run `bundle exec rake install`. 
+
+Alternatively, you can change host project's `Gemfile` to point to a local copy of this repo. For example, changing:
+
+```
+gem 'cfa-styleguide', '~> 0.7', github: 'codeforamerica/cfa-styleguide-gem'
+```
+to
+```
+gem 'cfa-styleguide', '~> 0.7', path: '../cfa-styleguide-gem'
+```
+
+where `../cfa-styleguide-gem` is the path (relative or absolute) to this repo on the local filesystem.
+
+After updating the `Gemfile` with these changes, you will need to run `bundle install`.
+
 
 ### Running tests
 
