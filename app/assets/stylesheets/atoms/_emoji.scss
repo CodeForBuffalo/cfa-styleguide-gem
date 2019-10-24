@@ -62,6 +62,10 @@
   background-image: url($image-url + 'emojis/1f4ec.png');
 }
 
+.emoji--email {
+  background-image: url($image-url + 'emojis/1f4e7.png')
+}
+
 .emoji--bust {
   background-image: url($image-url + 'emojis/1f464.png');
 }
