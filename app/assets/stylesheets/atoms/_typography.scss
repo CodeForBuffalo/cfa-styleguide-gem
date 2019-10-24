@@ -192,7 +192,7 @@ ol, ul {
       top: .25em;
       width: 25px;
       height: 15px;
-      background-image: image-url('emojis/checkmark.png');
+      background-image: url($image-url +'emojis/checkmark.png');
       background-repeat: no-repeat;
       background-size: auto 15px;
     }
@@ -201,7 +201,7 @@ ol, ul {
 
 .list--crossmark {
   li:before {
-    background-image: image-url('emojis/crossmark.png');
+    background-image: url($image-url + 'emojis/crossmark.png');
   }
 }
 
